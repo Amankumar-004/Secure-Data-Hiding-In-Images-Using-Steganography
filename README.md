@@ -36,11 +36,6 @@ This project requires the following Python libraries:
     pip install opencv-python pillow numpy
     ```
 
-    ```bash
-    git clone [https://github.com/ReshmaP-001/Secure-Data-Hiding-In-Images-Using-Steganography.git](https://github.com/ReshmaP-001/Secure-Data-Hiding-In-Images-Using-Steganography.git)
-    cd Secure-Data-Hiding-In-Images-Using-Steganography
-    ```
-
 ## Usage
 
 1.  **Encryption:**
@@ -56,29 +51,17 @@ This project requires the following Python libraries:
     -   Enter the password (note: this password is only used for GUI validation and does not actually decrypt the data).
     -   The decrypted message will be displayed in the GUI.
 
-## Notes
-
--   The password functionality in this code is limited to GUI validation. For actual encryption, you would need to implement cryptographic algorithms.
--   The message length is stored in the first 4 pixels of the encrypted image.
--   The encrypted image is saved as a PNG file to prevent data loss.
--   Make sure that the images have enough space to store the message.
--   The code utilizes simple LSB (Least Significant Bit) steganography, which may not be suitable for highly sensitive data.
--   The GUI uses Tkinter, which is a cross-platform GUI toolkit included with Python.
-
 ## ⚠️ Notes & Warnings
 
 -   You can use Python IDLE or Visual Studio Code to execute the scripts.
 -   The encrypted image is saved as a `.png` file to preserve the hidden data.
--   **Password Usage:** The password is used as a basic check within the GUI. For robust security, implement advanced cryptographic techniques. The current implementation does not use the password to encrypt the data.
+-   **Password Usage:** The password is used as a basic check within the GUI. For robust security, implement advanced cryptographic techniques. The current implementation does not use the password to encrypt the 
+  data.
 -   **Message Length:** The message length is stored within the encrypted image. Ensure that the image has enough space to store both the message and its length.
 -   **Image Size:** Large messages may not fit in small images; use high-resolution images for longer messages.
 -   **Error Handling:** The scripts include basic error handling, but additional checks can be added for robustness.
 -   **Security Considerations:** Steganography provides a basic level of security. For highly sensitive data, consider using strong encryption methods in conjunction with steganography.
 -   **File Integrity:** Avoid modifying the encrypted image using external tools, as this could corrupt the hidden data.
-
-## Screenshot
-
-![Screenshot 2025-02-25 171230](https://github.com/user-attachments/assets/df20b3bc-d503-4f8c-b6eb-5d075a3769f6)
 
 ## 📜 License
 
