@@ -16,21 +16,25 @@ This project provides a Python-based steganography tool that allows users to sec
 -   **Message Length Handling:** Encrypt and decrypt messages by storing and reading the message length within the image.
 -   **User-Friendly GUI:** Simple graphical interface to encrypt and decrypt images.
 
-## 🔧 Requirements
+## Requirements
 
--   Python 3.x
--   OpenCV (`opencv-python`)
+This project requires the following Python libraries:
 
-## 📦 Installation
+-   **OpenCV (opencv-python):** Used for image processing, specifically reading and writing image data.
+-   **Tkinter (built-in):** Used for creating the graphical user interface (GUI).
+-   **PIL (Pillow):** Used for image display in the GUI.
+-   **NumPy:** Used for numerical operations, specifically for byte array conversions.
 
-1.  Ensure you have Python 3.x installed.
-2.  Install the required library:
+
+## Installation
+
+1.  **Install Python:** Ensure you have Python 3.x installed on your system. You can download it from the official Python website (python.org).
+
+2.  **Install OpenCV, Pillow, and NumPy:** Open a terminal or command prompt and run the following command to install the necessary packages using pip:
 
     ```bash
-    pip install opencv-python
+    pip install opencv-python pillow numpy
     ```
-
-3.  Clone the repository:
 
     ```bash
     git clone [https://github.com/ReshmaP-001/Secure-Data-Hiding-In-Images-Using-Steganography.git](https://github.com/ReshmaP-001/Secure-Data-Hiding-In-Images-Using-Steganography.git)
