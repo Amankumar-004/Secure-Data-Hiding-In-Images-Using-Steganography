@@ -41,34 +41,29 @@ This project requires the following Python libraries:
     cd Secure-Data-Hiding-In-Images-Using-Steganography
     ```
 
-## ⚡ Usage
+## Usage
 
-### 🔒 Encrypt a Message into an Image
+1.  **Encryption:**
+    -   Run the `encrypt.py` script.
+    -   Select an image file using the file dialog.
+    -   Enter the message you want to hide.
+    -   Enter a password (note: this password is only used for GUI validation and does not actually encrypt the data).
+    -   The encrypted image will be saved as `encryptedImage.png` in the same directory as the original image.
 
-1.  Run the encryption script:
+2.  **Decryption:**
+    -   Run the `decrypt.py` script.
+    -   Select the encrypted image file using the file dialog.
+    -   Enter the password (note: this password is only used for GUI validation and does not actually decrypt the data).
+    -   The decrypted message will be displayed in the GUI.
 
-    ```bash
-    python encrypt.py
-    ```
+## Notes
 
-2.  Follow the prompts:
-    -   Select the image file (supports `.png`, `.jpg`, `.jpeg`).
-    -   Enter the secret message to hide.
-    -   Set a password for protection.
-3.  The encrypted image (`encryptedImage.png`) will be saved in the same directory as the original image.
-
-### 🔑 Decrypt a Hidden Message
-
-1.  Run the decryption script:
-
-    ```bash
-    python decrypt.py
-    ```
-
-2.  Follow the prompts:
-    -   Select the encrypted image file (`encryptedImage.png`).
-    -   Enter the correct password.
-3.  The decrypted message will be displayed.
+-   The password functionality in this code is limited to GUI validation. For actual encryption, you would need to implement cryptographic algorithms.
+-   The message length is stored in the first 4 pixels of the encrypted image.
+-   The encrypted image is saved as a PNG file to prevent data loss.
+-   Make sure that the images have enough space to store the message.
+-   The code utilizes simple LSB (Least Significant Bit) steganography, which may not be suitable for highly sensitive data.
+-   The GUI uses Tkinter, which is a cross-platform GUI toolkit included with Python.
 
 ## ⚠️ Notes & Warnings
 
